@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "vue3": "pnpm -F vue3-app dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "workspaces": [
     "packages/*",
@@ -21,6 +22,7 @@
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.14",
+    "husky": "^8.0.0",
     "postcss": "^8.4.27",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.0",

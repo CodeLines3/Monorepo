@@ -136,11 +136,7 @@ li {
   list-style: decimal;
   line-height: 32px;
 }
-#chart {
-  @apply h-[400px];
-}
-
 #tree {
-  @apply h-[460px];
+  @apply h-[400px];
 }
 </style>

@@ -28,6 +28,7 @@ const Colors: any = {
   CSS: "#38bdf8",
   etc: "#087ea4",
   root: "#42d392",
+  build: '#646cff'
 };
 let myDiagram: Diagram;
 function init() {

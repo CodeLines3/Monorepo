@@ -10,23 +10,23 @@ export const Head = [
 export const Info = [
   { label: "姓名", value: "孙宏新" },
   { label: "邮箱", value: "sunhongxin_job@163.com" },
-  { label: "年月", value: "1996.05-男" },
+  { label: "出生", value: "1996.05-男" },
   { label: "电话", value: "18355405800" },
 ];
 // 工作经历
 export const Jobs: any[] = [
   {
-    id: "nanjing",
+    id: "nanjing-1",
     firm: "南京恒歌零一信息科技有限公司",
     sub: "二十八所外包",
     post: "Web (前端)开发<28所军工>",
     time: "2019.05 - 2022.05",
     depart: "正常合同到期。",
     description: [
-      "数据分析、可视化图表、实时数据处理、并发、内部 WebGIS (非公网 WebGIS库，非 SDK  开发，请认真查看)。",
-      "项目从0到1技术选型、环境搭建、公用组件编写和复用模块提取、打包静态部署、出差交付、后期维护；",
-      "改造项目移植功能从C++→Angular、Vue ，提供可行性技术方案、解决关键技术问题（实现关健功能 Demo code）；",
-      "接手项目、重构，提升开发效率，改善用户体验（例如：保证功能完整前提能以原项目50%代码量实现并提升速度）等其他工作。",
+      "数据分析、可视化图表、实时数据处理、并发、内部 WebGIS (非公网 GIS SDK 开发)；",
+      "从0到1技术选型、环境搭建、公用组件和复用模块编写、打包静态部署、出差交付、后期维护；",
+      "改造移植功能从C++→Ng、Vue ，提供可行性技术方案、实现Demo code解决关键技术问题；",
+      "接手项目、重构，提升开发效率，改善用户体验（例如：保证功能完整前提能以原项目50%代码量实现并提升速度），等其他工作。",
     ],
   },
   {
@@ -38,7 +38,7 @@ export const Jobs: any[] = [
     description: [
       "在时，中国供销背景。主要以农产品批发、线上农产品商城为主要业务；",
       "工作内容主要负责上游商户和下游客户交易协调往来，深入市场一线调研，了解农副产品批发、流通中的痛点，集思广益提供解决方案；",
-      "作为甲方参与线上商城平台的需求分析并且出差同乙方对接。其他工作包括机房运维、市场等工作。",
+      "作为甲方参与线上商城平台的需求分析并且出差同乙方对接。其他工作包括机房运维、市场等。",
     ],
   },
 ];
@@ -48,23 +48,17 @@ export const Projects: any[] = [
     id: "nanjing",
     name: "军工项目",
     time: "2019.05 - 2022.05",
-    description: `1、可视化开发：使用最新生态插件库，基于插件自定义实现符合设计的效果图。基于现有数据进行图和表的分析、人工编辑整饬，并能提供出图、出表、出报告，总体实现类 office  多软件功能在同一系统集成，提供模板简化操作，为操作员减负。
-    2、数据并发下实现地图推点、列表实时显示。
-    3、基于C端类似 qwebchannel  等插件，将网页同C端能力系统嵌入集成，包括通信、原C端代码实现转为 JS  实现等工作。
-    4、基于 Node-ws  实现联合系统之间数据转发共享、通信。
-    5、WebGIS 地图开发：使用内部部门提供技术支持二次开发（该地图库为 openlayer  封装），要素上图、人工地图干预编辑、出图存档提供相关技术分析支撑。（这部分只是工作一部分，业务为主，并且未用外面常用地图，有招聘 GIS 开发的注意！非引擎和 SDK 开发）
-    技术点应用见-技能'。
-  `,
     desc: [
-      "可视化开发：使用最新生态插件库，基于插件自定义实现符合设计的效果图。基于现有数据进行图和表的分析、人工编辑整饬，并能提供出图、出表、出报告，总体实现类 office  多软件功能在同一系统集成，提供模板简化操作，为操作员减负；",
+      "可视化开发：使用最新生态插件库，基于插件自定义实现符合设计的效果图。基于现有数据进行图和表的分析、人工编辑整饬，并能提供出图、出表、出报告，总体实现类 office  多软件功能在同一系统集成",
       "WebGIS 地图开发：使用内部部门提供技术支持二次开发（该地图库为 openlayer  封装），要素上图、人工地图干预编辑、出图存档提供相关技术分析支撑。（这部分只是工作一部分，业务为主，并且未用外面常用地图，有招聘 GIS 开发的注意！非引擎和 SDK 开发）；",
+      "低代码基于图形化拖拽、参数化配置的方式提供模板，实现快速构建系统操作台、连接服务，简化操作为操作员减负；",
       "数据并发下实现地图推点、列表实时显示；",
       "基于 Node-ws 实现联合系统之间数据转发共享、通信。",
     ],
     result: [
-      "基本完善 Web  开发生态，为后续项目方面积累重要经验以便于快速启动新项目；",
-      "以少数的人工实现紧急和复杂开发，现场快速响应相关领导要求并实时反馈，缩短项目开发周期；",
-      "参与过往项目取得领导和专家的认可。出差交付完成后重要成果取得了内部文件表扬；",
+      "基本完善 Web 开发生态，为后续项目方面积累重要经验以便于快速启动新项目；",
+      "有限人员下实现紧急、复杂、多功能开发缩短开发周期，汇报现场实时快速响应相关领导要求；",
+      "参与过往项目取得领导和专家的认可，交付完成后重要成果取得了内部文件表扬；",
       "保质保量、按时完成任务",
     ],
   },
@@ -126,47 +120,57 @@ export const Ability: any = [
     ],
   },
   {
-    key: "vue-2",
-    text: "elem-ui、vxe-table、axios",
-    parent: "vue",
-    url: [
-      "https://element.eleme.io/#/zh-CN",
-      "https://vxetable.cn/#/table/base/basic",
-      "https://www.axios-http.cn/docs/intro",
-    ],
-  },
-  {
     key: "es6",
-    text: "ECMAScript",
+    text: "ES6+",
     parent: "root",
-    dir: "left",
+    dir: "right",
     url: ["https://developer.mozilla.org/zh-CN/docs/Web/JavaScript"],
   },
   {
     key: "es6-1",
-    text: "TypeScript、RxJS",
+    text: "TypeScript、RxJS、Axios",
     parent: "es6",
     url: [
+      "https://www.axios-http.cn/docs/intro",
       "https://www.tslang.cn/docs/handbook/basic-types.html",
       "https://cn.rx.js.org/",
+      "https://cn.mobx.js.org/",
     ],
   },
   { key: "Vis", text: "可视化", parent: "root", dir: "left" },
   {
     key: "Vis-1",
-    text: "Svg、*charts等",
+    text: "*-charts、antvis、Svg等",
     parent: "Vis",
     url: [
-      "https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial",
       "https://echarts.apache.org/zh/index.html",
+      'https://antv.vision/',
       "https://www.highcharts.com.cn/demo/highcharts",
+      "https://gojs.net/latest/",
+      "http://fabricjs.com/",
+      "https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial",
     ],
   },
+  { key: "CSS", text: "CSS(3)", parent: "root", dir: "left" },
   {
-    key: "Vis-2",
-    text: "GoJS、Fabri、Muuri",
-    parent: "Vis",
-    url: ["https://gojs.net/latest/", "http://fabricjs.com/"],
+    key: "CSS-1",
+    text: "Tailwind CSS、Sass",
+    parent: "CSS",
+    url: [
+      "https://www.tailwindcss.cn/docs/installation",
+      "https://www.sass.hk/",
+      "https://less.bootcss.com/features/",
+    ],
+  },
+  { key: "build", text: "构建", parent: "root", dir: "left" },
+  {
+    key: "build-2",
+    text: "Vite、Webpack",
+    parent: "build",
+    url: [
+      "https://vitejs.cn/config/",
+      "https://www.webpackjs.com/configuration/",
+    ],
   },
   { key: "etc", text: "其他", parent: "root", dir: "right" },
   {
@@ -175,30 +179,31 @@ export const Ability: any = [
     parent: "etc",
     url: [
       "https://react.docschina.org/",
-      "https://cn.mobx.js.org/",
       "http://react-guide.github.io/react-router-cn/",
     ],
   },
   {
-    key: "etc-2",
-    text: "Vite、Webpack",
-    parent: "etc",
-    url: [
-      "https://vitejs.cn/config/",
-      "https://www.webpackjs.com/configuration/",
-    ],
-  },
-  {
     key: "etc-3",
-    text: "Angular6+、ngzerro",
+    text: "Angular6+",
     parent: "etc",
-    url: ["http://angular.cn/", "http://ng.ant.design/docs/introduce/zh"],
+    url: ["http://angular.cn/"],
   },
   {
     key: "etc-4",
     text: "小程序",
     parent: "etc",
     url: ["https://developers.weixin.qq.com/miniprogram/dev/framework/"],
+  },
+  {
+    key: "etc-5",
+    text: "B 端组件库",
+    parent: "etc",
+    url: [
+      "https://element.eleme.io/#/zh-CN",
+      "https://vxetable.cn/#/table/base/basic",
+      "https://www.antdv.com/components/overview-cn/",
+      "http://ng.ant.design/docs/introduce/zh",
+    ],
   },
   {
     key: "Node",
@@ -234,16 +239,5 @@ export const Ability: any = [
     text: "Nginx",
     parent: "version",
     url: ["https://www.linuxcool.com/", "http://nginx.org/en/docs/"],
-  },
-  { key: "CSS", text: "CSS(3)", parent: "root", dir: "right" },
-  {
-    key: "CSS-1",
-    text: "Tailwind CSS、Sass",
-    parent: "CSS",
-    url: [
-      "https://www.tailwindcss.cn/docs/installation",
-      "https://www.sass.hk/",
-      "https://less.bootcss.com/features/",
-    ],
   },
 ];
