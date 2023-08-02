@@ -6,8 +6,15 @@
   "type": "module",
   "scripts": {
     "vue3": "pnpm -F vue3-app dev",
+    "lint": "eslint .ts .vue",
+    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,css,ts,tsx,md}": [
+      "npx eslint --fix"
+    ]
   },
   "workspaces": [
     "packages/*",
@@ -20,13 +27,22 @@
   "devDependencies": {
     "@types/node": "^20.4.4",
     "@types/nprogress": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.14",
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.16.1",
     "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
     "postcss": "^8.4.27",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.0",
     "postcss-px-to-viewport-8-plugin": "^1.2.2",
+    "prettier": "^3.0.0",
     "tailwindcss": "^3.3.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
