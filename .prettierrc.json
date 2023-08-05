@@ -1,8 +1,17 @@
 {
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 120,
-    "trailingComma": "none",
-    "arrowParens": "avoid",
-    "jsxSingleQuote": true
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 120,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "jsxSingleQuote": true,
+  "endOfLine": "crlf",
+  "overrides": [
+    {
+        "files": "*.json",
+        "options": {
+            "printWidth": 120
+        }
+    }
+  ]
 }

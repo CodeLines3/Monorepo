@@ -7,6 +7,7 @@
   "scripts": {
     "vue3": "pnpm -F vue3-app dev",
     "lint": "eslint .ts .vue",
+    "fix": "eslint --fix",
     "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
@@ -25,6 +26,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
     "@types/node": "^20.4.4",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
@@ -53,10 +55,12 @@
   },
   "dependencies": {
     "ant-design-vue": "4.0.0-rc.6",
+    "dayjs": "^1.11.9",
     "echarts": "^5.4.3",
     "gojs": "^2.3.9",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
+    "mermaid": "^10.3.0",
     "nprogress": "^0.2.0",
     "vue": "^3.3.4",
     "vue-echarts": "^6.6.0",
