@@ -1,56 +1,38 @@
 {
+  "root": true,
   "env": {
     "browser": true,
-    "es2021": true
+    "node": true,
+    "es6": true,
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:vue/vue3-essential",
-    "airbnb-base",
-    "plugin:prettier/recommended"
-  ],
   "parser": "vue-eslint-parser",
+  "plugins": ["vue"],
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  "plugins": [
-    "@typescript-eslint",
-    "vue",
-    "prettier",
-    "import"
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error",
-    "no-undef": 0,
-    "no-console": 0,
-    "no-alert": 0,
+    "prettier/prettier": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off",
-    "import/order": 0,
-    "import/extensions": 0,
-    "import/no-unresolved": 0,
-    "import/no-extraneous-dependencies": [
-      0,
+    "no-use-before-define": "off",
+    "space-before-function-paren": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
       {
-        "devDependencies": true,
-        "optionalDependencies": true,
-        "peerDependencies": true
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
       }
     ]
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
-    }
   }
 }
